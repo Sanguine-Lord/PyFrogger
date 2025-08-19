@@ -13,7 +13,7 @@ class Rectangle(pygame.sprite.Sprite):
         self.image = pygame.Surface((width,height))
         self.image.fill(colour)
         self.rect = self.image.get_rect()
-        self.rect.topleft = (x,y)
+        self.rect.center = (x,y)
     
     def draw(self, screen):
     # subclasses must override
